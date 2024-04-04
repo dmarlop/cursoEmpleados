@@ -4,16 +4,18 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EmpleadosComponent } from './empleados/empleados.component';
-import { EmpleadoComponent } from './empleado/empleado.component';
-import { EjemploTirarComponent } from './ejemplo-tirar/ejemplo-tirar.component';
+import { EmpleadoComponent } from './empleado/EmpleadoComponent';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
-    AppComponent, EmpleadosComponent, EmpleadoComponent, EjemploTirarComponent
+    AppComponent, EmpleadosComponent, EmpleadoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()
